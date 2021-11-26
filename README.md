@@ -1,95 +1,70 @@
-# Cours React MMI
+# Getting Started with Create React App
 
-## Prérequis
-- Créer un compte github pour tous les membres des équipes: https://github.com/
-- Créer un compte Netlify par équipe: https://www.netlify.com/
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Exercices
-- Cloner le repo : `git clone git@github.com:emmanuelgratuze/mmi-react-course-p2022.git`
-- Installer les dépendances : `npm install`
-- Démarrer le projet: `npm start`
-- Les fichiers des exercices se trouve dans : `./src/exercices`
+## Available Scripts
 
-## Plateforme de streaming  🎧
+In the project directory, you can run:
 
-### Setup du projet ⚒️
-#### 1. Créer ou récupérer la base du projet
-- Créer un repository à partir du template : https://github.com/emmanuelgratuze/mmi-react-course-p2022-project-base
-**ou**
-- Créer son repository de zéro et créer sa propre base de projet (de préférence avec [create-react-app](https://create-react-app.dev/))
+### `yarn start`
 
-#### 2. Configurer l'accès SSH à notre compte
-*Vous pouvez passer cette étape si vous avez déjà une clé SSH configurée avec votre compte Github*
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-- Générer une clé SSH et ajouter l'ajouter à notre compte Github: https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-#### 3. Setup le projet en local
-- Récupérer le code : `git clone <url du repository>`
-*L'URL du repo se trouve sur la page de votre projet forké. Elle devrait être au format :
-`git@github.com:<votre-username-github>/mmi-react-course-p2022-project-base.git`*
-- Installer les dépendances : `npm install`
+### `yarn test`
 
-#### 4. Modifier le projet
-- Modifier par exemple `src/pages/Home` en ajoutant une ligne ou n'importe quel contenu
-- `git status` (optionnel : vérifie les modifications en cours). Vous devriez voir apparaître le fichier `src/pages/Home` que vous venez de modifier
-- `git add -A` (sélectionne toutes les modifications que l'on vient de faire) 
-- `git status` de nouveau (optionnel). Le nom du fichier `src/pages/Home` est normalement maintenant vert ce qui signifie qu'il est sélectionné 
-- `git commit -m "Our first commit"` (crée le commit en local)
-- `git push origin main` (envoie le commit que l'on vient de faire sur la branche "main" de notre dépot)
-*Si quelqu'un de l'équipe a déjà envoyé un commit avant, il faut le récupérer avant de pouvoir pousser le sien :*
-- `git pull origin main` (récupère les derniers commits sur la branche "main")
-- Le cas échéant... résoudre les conflits 🤪 et lancer de nouveau la précédente commande
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Déployer le projet 🚀
-#### 1. Créer un compte Netlify 
-- https://www.netlify.com/
-*Conseil: utiliser son compte Github, c'est plus simple 😎*
-#### 2. Créer un nouveau site et le connecter au projet Github
-  - Depuis le dashboard, cliquer sur "Create new site"
-  - Sélectionner Github comme "Git provider"
-  - Autoriser l'application depuis la fenêtre qui vient de s'ouvrir
-  - Sélectionner le repository forké précédemment
-  - Laisser les champs du formulaire qui suit tels quels et cliquer sur "Deploy site"
-*Si le projet n'est pas créé à partir de celui de `mmi-react-course-p2022-project-base`, vérifiez bien que la commande de build **"Build command"** et la destination vers les fichiers buildés **"Publish directory"** sont corrects.*
-  - Attendre la fin du déploiement et vérifier que le site fonctionne correctement
-  - Nous communiquer l'URL de votre site 🙂
+### `yarn build`
 
-### Structure du projet
-`public`: Les fichiers qu'il contient ne sont pas compilés et sont copiés à la racine de mon site.
-Exemple : si on crée un fichier `public/image.jpg`, alors ce fichier sera accessible ici :
-- `http://localhost:3000/image.jpg` en développement (local)
-- `https://votre.site.sur.netlify.com/image.jpg` en production (sur Netlify)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-`src/`: Emplacement de vos fichiers Javascript et de style. Aucune arborescence n'est imposée.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-`craco.config.js`: Configuration Craco
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-`node_modules`: Emplacement des paquets installés via NPM
+### `yarn eject`
 
-`.env` et `.env.local`: Permettent la définition de variables d'environnement
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-`.gitignore`: Liste des fichiers que l'on ne souhaite pas envoyer sur git
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-`package.json`: Fichier de configuration de NPM
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-## Ressources
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-### NPM
-- [Introduction à NPM](https://maxlab.fr/javascript/comprendre-et-maitriser-npm-introduction/)
+## Learn More
 
-### PropTypes
-- [Documentation PropTypes](https://fr.reactjs.org/docs/typechecking-with-proptypes.html)
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### React
-- [Fondamentaux de React](https://fr.reactjs.org/docs/getting-started.html)
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Spotify
-- [Spotify Web API Reference](https://developer.spotify.com/documentation/web-api/reference/)
+### Code Splitting
 
-### Create React App (CRA)
-- Create React fournit la configuration de base au projet. [Documentation](https://create-react-app.dev/docs/documentation-intro)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-- On utilise [Craco](https://github.com/gsoft-inc/craco) pour configurer CRA, via le fichier `craco.config.js` présent à la racine du projet. [Documentation](https://github.com/gsoft-inc/craco/blob/master/packages/craco/README.md#configuration)
+### Analyzing the Bundle Size
 
-### Webpack
-- [Documentation](https://webpack.js.org/)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
