@@ -5,17 +5,17 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import Home from "./pages/home";
-import Parameters from "./pages/parameters";
-import Pay from "./pages/pay";
-import Plus from "./pages/plus";
-import Profil from "./pages/profil";
+import Home from "./pages/Home";
+import Parameters from "./pages/Parameters";
+import Pay from "./pages/Pay";
+import Plus from "./pages/Plus";
+import Profil from "./pages/Profil";
 
 function App() {
     return (
       <BrowserRouter>
         <Routes>
-          <Route exact path="/home" element={<Home/>} />
+          <Route exact path="/" element={<Home/>} />
           <Route path="/parameters" element={<Parameters/>} />
           <Route path="/pay" element={<Pay/>} />
           <Route path="/plus" element={<Plus/>} />
