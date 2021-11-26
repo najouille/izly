@@ -1,10 +1,13 @@
-{/*
-const Home = () => {
+import Solde from "../../components/Solde";
+
+function Home() {
+    console.log('yuuuuuuu')
     return (
-      <div className="home"> 
-        <Navigation/>
-        <h1>Accueil</h1>
-      </div>
-    );
-  };
-  export default Home;
+        <div>
+            <Solde />
+        </div>
+    )
+    
+}
+
+export default Home;
