@@ -16,24 +16,27 @@ function Plus () {
                 <img src="./assets/menu.svg" />
             </div>
               <h3>Menu repas</h3>
-            </div>  
+            </div>
 
             <div className="affluences">
-              <h3>Disponibilités et affluences</h3>
-              <img src="./assets/affluences.svg" />
-              <img src="./assets/bouton.svg" />
+            <div className="logo_container">
+                <img src="./assets/affluences.svg" />
             </div>
+              <h3>Disponibilités et affluences</h3>
+            </div> 
 
             <div className="fidelite">
-              <h3>Mes points de fidélité</h3>
-              <img src="./assets/fidelite.svg" />
-              <img src="./assets/bouton.svg" />
+            <div className="logo_container">
+                <img src="./assets/fidelite.svg" />
             </div>
+              <h3>Mes points fidélité</h3>
+            </div> 
 
             <div className="apropos">
+            <div className="logo_container">
+                <img src="./assets/apropos.svg" />
+            </div>
               <h3>A propos</h3>
-              <img src="./assets/apropos.svg" />
-              <img src="./assets/bouton.svg" />
             </div>
 
           </div>
