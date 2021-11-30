@@ -1,15 +1,24 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { Link } from "react-router-dom";
+import Context from "../../utile/context";
 import Datetime from "./Datetime";
 
 function Solde() {
-    const [count, setCount] = useState(0)
+    const { count, transactions } = useContext(Context)
     return (
-        <div class="top-container">
-            <div class="sold-container">
+        <div className="top-container">
+            <div className="sold-container">
                 <h1>{count}</h1>
                 <Datetime />
-                <button class="top-load-money" onClick={() => setCount(count + 10)}>Recharger mon compte</button>
-                <button class="top-unload-money" onClick={() => setCount(count - 10)}>Virer mon argent</button>
+                <div className="buttons-top">
+                    <Link to="/pay">
+                        <input type="submit" value="Recharger mon compte" />
+                    </ Link>
+                    <Link to="/transfer">
+                        <input type="submit" value="Virer mon argent" />
+                    </ Link>
+                </div>
+                {JSON.stringify(transactions, null, 4)}
             </div>
         </div>
     );
