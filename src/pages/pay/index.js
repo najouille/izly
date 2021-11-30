@@ -13,10 +13,20 @@ function Pay() {
     return (
         <div className="top-container">
             <div className="sold-container">
-                <button className="top-load-money" onClick={() => handleDeposit(10)}>Recharger 10 €</button>
-                <button className="top-load-money" onClick={() => handleDeposit(20)}>Recharger 20 €</button>
-                <button className="top-load-money" onClick={() => handleDeposit(30)}>Recharger 30 €</button>
-                <button className="top-load-money" onClick={() => handleDeposit(40)}>Recharger 40 €</button>
+                <Link to="/validation">
+                    <button className="top-load-money" onClick={() => handleDeposit(10)}>Recharger 10 €</button>
+                </ Link>
+                <Link to="/validation">
+                    <button className="top-load-money" onClick={() => handleDeposit(20)}>Recharger 20 €</button>
+                </ Link>
+                <Link to="/validation">
+                    <button className="top-load-money" onClick={() => handleDeposit(30)}>Recharger 30 €</button>
+                </ Link>
+                <Link to="/validation">
+                    <button className="top-load-money" onClick={() => handleDeposit(40)}>Recharger 40 €</button>
+                </ Link>
+                
+                
             </div>
             <Link to="/">
                 <input type="submit" value="Retour" />

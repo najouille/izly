@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Context from "../../utile/context";
 import Datetime from "./Datetime";
@@ -18,7 +18,16 @@ function Solde() {
                         <input type="submit" value="Virer mon argent" />
                     </ Link>
                 </div>
-                {JSON.stringify(transactions, null, 4)}
+                <div className="transactions-bottom">
+                    <div className="top-section">
+                        <h3>Mes transactions</h3>
+                        <Link to="/AllTransactions">
+                            <input type="submit" value="Voir tout" />
+                        </ Link>
+                    </div>
+                    {JSON.stringify(transactions, null, 4)}
+                </div>
+                
             </div>
         </div>
     );

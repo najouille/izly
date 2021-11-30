@@ -9,10 +9,13 @@ import Home from "./pages/Home";
 import Parameters from "./pages/Parameters";
 import Pay from "./pages/Pay";
 import Transfer from "./pages/Transfer";
+import AllTransactions from "./pages/AllTransactions";
 import Plus from "./pages/Plus";
+import Validation from "./pages/Validation";
 import Profil from "./pages/Profil";
 import Context from "./utile/context";
 import useLocalState from "./utile/useLocaleState";
+
 
 function App() {
 
@@ -35,8 +38,10 @@ function App() {
           <Route path="/parameters" element={<Parameters />} />
           <Route path="/pay" element={<Pay />} />
           <Route path="/transfer" element={<Transfer />} />
+          <Route path="/allTransactions" element={<AllTransactions />} />
           <Route path="/plus" element={<Plus />} />
           <Route path="/profil" element={<Profil />} />
+          <Route path="/validation" element={<Validation />} />
         </Routes>
       </BrowserRouter>
     </Context.Provider>
