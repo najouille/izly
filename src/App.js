@@ -13,6 +13,7 @@ import Plus from "./pages/Plus";
 import Profil from "./pages/Profil";
 import Context from "./utile/context";
 import useLocalState from "./utile/useLocaleState";
+import ChoiceCard from "./components/ChoiceCard";
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
           <Route path="/transfer" element={<Transfer />} />
           <Route path="/plus" element={<Plus />} />
           <Route path="/profil" element={<Profil />} />
+          <Route path="/choicecard" element={<ChoiceCard />} />
         </Routes>
       </BrowserRouter>
     </Context.Provider>
