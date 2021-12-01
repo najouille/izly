@@ -1,29 +1,31 @@
 import React from "react"
 import { Link } from 'react-router-dom';
-<link rel="stylesheet" href="mystyle.css"></link>
+import "./navbar.css"
 
 
 const Navbar = () =>{
   return (
-  <div>
+  <div className="logo">
       <div className="Accueil">
-                <img src="./assets/menu.svg" />
+      <Link to="/"><img src="./assets/Navbar/Bold/Home.svg" /></Link>
     </div>
-    <li>
-      <Link to="/">Accueil</Link>
-    </li>
-    <li>
-      <Link to="/plus">Plus</Link>
-    </li>
-    <li>
-      <Link to="/pay">Payer</Link>
-    </li>
-    <li>
-      <Link to="/parameters">Paramètres</Link>
-    </li>
-    <li>
-      <Link to="/profil">Profil</Link>
-    </li>
+
+      <div className="Plus">
+      <Link to="Plus"><img src="./assets/Navbar/Bold/Plus.svg" /></Link>
+    </div>
+
+    <div className="Pay">
+      <Link to="Pay"><img src="./assets/Navbar/Pay.svg" /></Link>
+    </div>
+
+    <div className="Parametre">
+      <Link to="Parameters"><img src="./assets/Navbar/Bold/Setting.svg" /></Link>
+    </div>
+
+    <div className="Profil">
+      <Link to="Profil"><img src="./assets/Navbar/Bold/Profile.svg" /></Link>
+    </div>
+
   </div>
   );
 }
