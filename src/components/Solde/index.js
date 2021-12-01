@@ -4,28 +4,43 @@ import Context from "../../utile/context";
 import Datetime from "./Datetime";
 
 function Solde() {
-    const { count, transactions } = useContext(Context)
+    const { transactions } = useContext(Context)
+    console.log(transactions)
+    console.log(transactions.reduce((a,b) => {
+        console.log(a, b)
+        return a + b.amount
+    }, 0))
     return (
         <div className="top-container">
             <div className="sold-container">
-                <h1>{count}</h1>
+                <h1>{transactions.reduce((a,b) => a + b.amount, 0)}</h1>
                 <Datetime />
                 <div className="buttons-top">
-                    <Link to="/pay">
+                    <Link to="/ChoicePay">
                         <input type="submit" value="Recharger mon compte" />
                     </ Link>
-                    <Link to="/transfer">
+                    <Link to="/ChoiceTransfer">
                         <input type="submit" value="Virer mon argent" />
                     </ Link>
                 </div>
                 <div className="transactions-bottom">
                     <div className="top-section">
-                        <h3>Mes transactions</h3>
+                        <p>Mes transactions</p>
                         <Link to="/AllTransactions">
                             <input type="submit" value="Voir tout" />
                         </ Link>
                     </div>
-                    {JSON.stringify(transactions, null, 4)}
+                    {transactions.map( (elt, index) => index < 5 ? elt.amount+'€ ' + elt.transactionDate : '')}
+
+                    {/* {(() => {
+                            let megagrossechainedecaracteres = ''
+                            for(let i=0; i<10; i++) {
+                                megagrossechainedecaracteres = megagrossechainedecaracteres + transactions[i] + ' '
+                            }
+                            return megagrossechainedecaracteres
+                        })()
+                    } */}
+                    {/* {JSON.stringify(transactions, null, 4)} */}
                 </div>
                 
             </div>

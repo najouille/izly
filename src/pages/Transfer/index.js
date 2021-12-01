@@ -1,31 +1,32 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Context from "../../utile/context";
+import dayjs from 'dayjs';
+import 'dayjs/locale/fr';
 
 function Transfer() {
-    const { count, setCount, transactions, setTransactions } = useContext(Context)
+    const { transactions, setTransactions } = useContext(Context)
 
-    function handleDeposit(amount) {
-        setCount(count + amount)
-        setTransactions([...transactions, amount])
-        
-    }
+    function handleDeposit(transaction) {
+        setTransactions([...transactions, transaction])
+    }   
     return (
         <div className="top-container">
-            <div className="sold-container">    
-            <Link to="/validation">
-                    <button className="top-load-money" onClick={() => handleDeposit(-10)}>Virer 10 €</button>
+            <div className="sold-container">
+                <Link to="/validation">
+                    <button className="top-load-money" onClick={() => handleDeposit({amount: -10, transactionDate: dayjs().locale('fr').format('DD MMM')})}>Virer 10 €</button>
                 </ Link>
                 <Link to="/validation">
-                    <button className="top-load-money" onClick={() => handleDeposit(-20)}>Virer 20 €</button>
+                    <button className="top-load-money" onClick={() => handleDeposit({amount: -20, transactionDate: dayjs().locale('fr').format('DD MMM')})}>Virer 20 €</button>
                 </ Link>
                 <Link to="/validation">
-                    <button className="top-load-money" onClick={() => handleDeposit(-30)}>Virer 30 €</button>
+                    <button className="top-load-money" onClick={() => handleDeposit({amount: -30, transactionDate: dayjs().locale('fr').format('DD MMM')})}>Virer 30 €</button>
                 </ Link>
                 <Link to="/validation">
-                    <button className="top-load-money" onClick={() => handleDeposit(-40)}>Virer 40 €</button>
+                    <button className="top-load-money" onClick={() => handleDeposit({amount: -40, transactionDate: dayjs().locale('fr').format('DD MMM')})}>Virer 40 €</button>
                 </ Link>
             </div>
+            
             <Link to="/">
                 <input type="submit" value="Retour" />
             </ Link>
