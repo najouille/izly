@@ -45,14 +45,7 @@ function App() {
           <Route path="/allTransactions" element={<AllTransactions />} />
           <Route path="/plus" element={<Plus />} />
           <Route path="/profil" element={<Profil />} />
-<<<<<<< Updated upstream
-<<<<<<< HEAD
           <Route path="/validation" element={<Validation />} />
-=======
-          <Route path="/choicecard" element={<ChoiceCard />} />
->>>>>>> 347807b69b01bc94070c8e96a5f4b7f33e4f35a9
-=======
->>>>>>> Stashed changes
         </Routes>
       </BrowserRouter>
     </Context.Provider>
