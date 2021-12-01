@@ -17,6 +17,7 @@ import Context from "./utile/context";
 import useLocalState from "./utile/useLocaleState";
 import MyCards from "./pages/Parameters/MyCards";
 import AddCard from "./pages/Parameters/AddCard";
+import Navbar from "./components/Navbar";
 
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
           <Route path="/profil" element={<Profil />} />
           <Route path="/validation" element={<Validation />} />
         </Routes>
+        <Navbar />
       </BrowserRouter>
     </Context.Provider>
   )
