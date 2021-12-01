@@ -3,7 +3,9 @@ import Solde from "../../components/Solde";
 
 function Home() {
     return (
+        <>
         <Solde />
+        </>
     )
     
 }

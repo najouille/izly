@@ -15,7 +15,8 @@ import Validation from "./pages/Validation";
 import Profil from "./pages/Profil";
 import Context from "./utile/context";
 import useLocalState from "./utile/useLocaleState";
-import ChoiceCard from "./components/ChoiceCard";
+import MyCards from "./pages/Parameters/MyCards";
+import AddCard from "./pages/Parameters/AddCard";
 
 
 function App() {
@@ -37,16 +38,21 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/parameters" element={<Parameters />} />
+          <Route path="/mycards" element={<MyCards />} />
+          <Route path="/addcard" element={<AddCard />} />
           <Route path="/pay" element={<Pay />} />
           <Route path="/transfer" element={<Transfer />} />
           <Route path="/allTransactions" element={<AllTransactions />} />
           <Route path="/plus" element={<Plus />} />
           <Route path="/profil" element={<Profil />} />
+<<<<<<< Updated upstream
 <<<<<<< HEAD
           <Route path="/validation" element={<Validation />} />
 =======
           <Route path="/choicecard" element={<ChoiceCard />} />
 >>>>>>> 347807b69b01bc94070c8e96a5f4b7f33e4f35a9
+=======
+>>>>>>> Stashed changes
         </Routes>
       </BrowserRouter>
     </Context.Provider>
