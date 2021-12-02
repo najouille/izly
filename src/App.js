@@ -21,6 +21,8 @@ import TransferTiers from "./pages/TransferTiers";
 import MyCards from "./pages/Parameters/MyCards";
 import AddCard from "./pages/Parameters/AddCard";
 import QrCode from "./pages/QrCode";
+import Navbar from "./components/Navbar";
+
 
 function App() {
 
@@ -58,6 +60,7 @@ function App() {
           <Route path="/transfertiers" element={<TransferTiers />} />
           <Route path="/qrcode" element={<QrCode />} />
         </Routes>
+        <Navbar />
       </BrowserRouter>
     </Context.Provider>
   )

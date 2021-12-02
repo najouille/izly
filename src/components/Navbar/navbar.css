@@ -1,0 +1,24 @@
+.logo {
+        display: flex;
+        padding: 15px;
+        margin-top: 16px;
+        align-items: center;
+        border-radius: 12px;
+        background-color: #FEFEFF;
+        justify-content: space-between;
+        padding: 0 5vw;
+        position: relative;
+}
+
+.Plus {
+        margin-right: 100px;
+}
+
+
+
+.Pay {
+        position:absolute;
+        left: 50%;
+        bottom: 30%;
+        transform: translateX(-50%);
+}
