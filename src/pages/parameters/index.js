@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 function Parameters() {
   return (
     <div>
-      <h2>hello</h2>
+      <h1>Paramètres</h1>
       <Link to="/MyCards">
         <input type="submit" value="Gérer mes cartes" />
       </Link>

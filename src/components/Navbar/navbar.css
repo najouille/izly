@@ -1,13 +1,16 @@
 .logo {
         display: flex;
-        padding: 15px;
+        padding: 22px 0;
         margin-top: 16px;
         align-items: center;
-        border-radius: 12px;
         background-color: #FEFEFF;
-        justify-content: space-between;
-        padding: 0 5vw;
-        position: relative;
+        justify-content: space-around;
+        position: fixed;
+        width: 100%;
+        max-width: 100vw;
+        bottom: 0;
+        background: #FEFEFF;
+        box-shadow: 0px 0px 27px 4px rgba(29, 74, 188, 0.08);
 }
 
 .Plus {
@@ -19,6 +22,6 @@
 .Pay {
         position:absolute;
         left: 50%;
-        bottom: 30%;
+        bottom: 50%;
         transform: translateX(-50%);
 }

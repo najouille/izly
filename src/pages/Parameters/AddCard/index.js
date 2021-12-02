@@ -25,6 +25,9 @@ function AddCard() {
 
   return (
     <div>
+      <div>
+        <h1>Mes cartes</h1>
+      </div>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label for="nameImput">Titulaire de la carte</label>
