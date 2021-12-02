@@ -35,7 +35,7 @@ function Pay() {
                     <button className="top-load-money" onClick={() => handleDeposit({randomItem , amount: 10, transactionDate: dayjs().locale('fr').format('DD MMM')})}>Recharger 10 €</button>
                 </ Link>
                 <Link to="/validation">
-                    <button className="top-load-money" onClick={() => handleDeposit({randomItem, random: 20, transactionDate: dayjs().locale('fr').format('DD MMM')})}>Recharger 20 €</button>
+                    <button className="top-load-money" onClick={() => handleDeposit({randomItem, amount: 20, transactionDate: dayjs().locale('fr').format('DD MMM')})}>Recharger 20 €</button>
                 </ Link>
                 <Link to="/validation">
                     <button className="top-load-money" onClick={() => handleDeposit({randomItem, amount: 30, transactionDate: dayjs().locale('fr').format('DD MMM')})}>Recharger 30 €</button>

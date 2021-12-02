@@ -15,10 +15,10 @@ const Navbar = () =>{
     </div>
 
     <div className="Pay">
-      <Link to="Pay"><img src="./assets/Navbar/Pay.svg" /></Link>
+      <Link to="QrCode"><img src="./assets/Navbar/Pay.svg" /></Link>
     </div>
 
-    <div className="Parametre">
+    <div className="Parameters">
       <Link to="Parameters"><img src="./assets/Navbar/Bold/Setting.svg" /></Link>
     </div>
 

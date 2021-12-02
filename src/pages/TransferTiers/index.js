@@ -1,7 +1,14 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 function TransferTiers() {
+
+    const navigate = useNavigate();
+    const handleSubmit = (event) => {
+        event.preventDefault()
+        navigate("/Transfer")
+    }
+
     return (
         <div className="top-container">
             <div className="sold-container">
@@ -9,12 +16,13 @@ function TransferTiers() {
             </div>
             <div>
                 <label>E-mail du destinataire</label>
+                <form onSubmit={handleSubmit}>
                     <input type="email" placeholder="izly@exemple.com" />
-                    <Link to="/Transfer">
-                        <input type="submit" value="Valider" />
-                    </ Link>
+                    <input type="submit" value="Valider" />
+                </form>
+                    
                 <Link to="/ChoiceTransfer">
-                    <input type="submit" value="Annuler" />
+                    <input value="Annuler" />
                 </ Link>
             </div>
             
