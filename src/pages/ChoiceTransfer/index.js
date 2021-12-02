@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom'
 function ChoiceTransfer() {
     return (
         <div className="top-container">
+            <Link to="/">
+                <input type="submit" value="Retour" />
+            </ Link>
             <div className="sold-container">
             <h2>Virement</h2>
             </div>

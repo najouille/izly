@@ -15,11 +15,12 @@ import Validation from "./pages/Validation";
 import Profil from "./pages/Profil";
 import Context from "./utile/context";
 import useLocalState from "./utile/useLocaleState";
-import ChoiceCard from "./components/ChoiceCard";
 import ChoicePay from "./pages/ChoicePay";
 import ChoiceTransfer from "./pages/ChoiceTransfer";
 import TransferTiers from "./pages/TransferTiers";
-
+import MyCards from "./pages/Parameters/MyCards";
+import AddCard from "./pages/Parameters/AddCard";
+import QrCode from "./pages/QrCode";
 
 function App() {
 
@@ -30,7 +31,10 @@ function App() {
     count,
     setCount,
     transactions,
-    setTransactions 
+    setTransactions, 
+    addMoney: (amount) => {
+      let solde = transactions.reduce((a,b) => a + b.amount, 0)
+    }
   }
 
 
@@ -40,16 +44,19 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/parameters" element={<Parameters />} />
+          <Route path="/mycards" element={<MyCards />} />
+          <Route path="/addcard" element={<AddCard />} />
           <Route path="/pay" element={<Pay />} />
           <Route path="/transfer" element={<Transfer />} />
           <Route path="/alltransactions" element={<AllTransactions />} />
           <Route path="/plus" element={<Plus />} />
           <Route path="/profil" element={<Profil />} />
           <Route path="/validation" element={<Validation />} />
-          <Route path="/choicecard" element={<ChoiceCard />} />
+          <Route path="/validation:etatTransac" element={<Validation />} />
           <Route path="/choicepay" element={<ChoicePay />} />
           <Route path="/choicetransfer" element={<ChoiceTransfer />} />
           <Route path="/transfertiers" element={<TransferTiers />} />
+          <Route path="/qrcode" element={<QrCode />} />
         </Routes>
       </BrowserRouter>
     </Context.Provider>

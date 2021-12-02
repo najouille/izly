@@ -9,10 +9,10 @@ function TransferTiers() {
             </div>
             <div>
                 <label>E-mail du destinataire</label>
-                <input type="email" placeholder="izly@exemple.com" />
-                <Link to="/Transfer">
-                    <input type="submit" value="Valider" />
-                </ Link>
+                    <input type="email" placeholder="izly@exemple.com" />
+                    <Link to="/Transfer">
+                        <input type="submit" value="Valider" />
+                    </ Link>
                 <Link to="/ChoiceTransfer">
                     <input type="submit" value="Annuler" />
                 </ Link>

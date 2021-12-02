@@ -11,7 +11,7 @@ function AllTransactions() {
                 <input type="submit" value="Retour" />
             </ Link>
             <h2>Mes transactions</h2>
-            {transactions.map( (elt, index) => index < 50 ? elt.amount+'€ ' + elt.transactionDate : '')}
+            {transactions.map( (elt, index) => index < 50 ? elt.amount+ '€ ' + 'Le ' +  elt.transactionDate : '')}
         </div>
     );
 }

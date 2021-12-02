@@ -30,7 +30,7 @@ function Solde() {
                             <input type="submit" value="Voir tout" />
                         </ Link>
                     </div>
-                    {transactions.map( (elt, index) => index < 5 ? elt.amount+'€ ' + elt.transactionDate : '')}
+                    {transactions.map( (elt, index) => index < 5 ? elt.amount+ '€ ' + elt.transactionDate : '')}
 
                     {/* {(() => {
                             let megagrossechainedecaracteres = ''
@@ -43,6 +43,15 @@ function Solde() {
                     {/* {JSON.stringify(transactions, null, 4)} */}
                 </div>
                 
+            </div>
+
+            <div className="bottom-container">
+            <div className="pay-button">
+                <img alt="" src="../../../public/assets/menu.svg" />
+                <Link to="/QrCode">
+                    <input type="submit" value="Payer" />
+                </ Link>
+            </div>
             </div>
         </div>
     );
