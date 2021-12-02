@@ -1,83 +1,82 @@
 import React, { useState } from "react";
-import useLocalState from '../../../utile/useLocaleState'
+import useLocalState from "../../../utile/useLocaleState";
 
 function AddCard() {
-  const [formResult, setFormResult] = useLocalState({
-    card_owner: "",
-    card_number: "",
-    card_expire: "",
-    card_cvv: "",
-  }, "form_result_card");
+  const [formResult, setFormResult] = useLocalState(
+    {
+      card_number: "",
+      card_expire: "",
+      card_cvv: "",
+      card_owner: "",
+    },
+    "form_result_card"
+  );
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    const { card_owner, card_number, card_expire, card_cvv } =
+    console.log(event);
+
+    const { card_number, card_expire, card_cvv, card_owner } =
       event.target.elements;
 
     setFormResult({
-      card_owner: card_owner.value,
       card_number: card_number.value,
       card_expire: card_expire.value,
       card_cvv: card_cvv.value,
+      card_owner: card_owner.value,
     });
+    window.location = "/MyCards"
   };
 
   return (
     <div>
-      <div>
-        <h1>Mes cartes</h1>
-      </div>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label for="nameImput">Titulaire de la carte</label>
-          <input
-            type="text"
-            name="card_owner"
-            defaultValue={formResult.card_owner}
-            className="form-control"
-            id="nameImput"
-            placeholder="Name"
-          />
-        </div>
-        <div className="form-group">
-          <label for="nameImput">Numéro de carte</label>
+          <label htmlFor="nameImput">Numéro de carte</label>
           <input
             type="text"
             name="card_number"
             defaultValue={formResult.card_number}
             className="form-control"
             id="nameImput"
-            placeholder="Name"
           />
         </div>
         <div className="form-group">
-          <label for="nameImput">Date d'expiration</label>
+          <label htmlFor="nameImput">Date d'expiration</label>
           <input
             type="text"
             name="card_expire"
             defaultValue={formResult.card_expire}
             className="form-control"
             id="nameImput"
-            placeholder="Name"
           />
         </div>
         <div className="form-group">
-          <label for="emailImput">CVV</label>
+          <label htmlFor="emailImput">CVV</label>
           <input
             name="card_cvv"
             type="text"
             defaultValue={formResult.card_cvv}
             className="form-control"
-            id="emailImput"
-            placeholder="email@domain.com"
+            id="number"
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="nameImput">Titulaire de la carte</label>
+          <input
+            type="text"
+            name="card_owner"
+            defaultValue={formResult.card_owner}
+            className="form-control"
+            id="nameImput"
           />
         </div>
         <input type="submit" value="Submit" className="btn btn-primary" />
       </form>
     </div>
   );
+
 }
 
 export default AddCard;
-
