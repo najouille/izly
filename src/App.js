@@ -1,10 +1,6 @@
-import React from 'react';
+import React from "react";
 // import { render } from "react-dom";
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Parameters from "./pages/Parameters";
 import Pay from "./pages/Pay";
@@ -23,22 +19,16 @@ import AddCard from "./pages/Parameters/AddCard";
 import QrCode from "./pages/QrCode";
 import Navbar from "./components/Navbar";
 
-
 function App() {
-
-  const [count, setCount] = useLocalState(0)
-  const [transactions, setTransactions] = useLocalState([])
+  const [transactions, setTransactions] = useLocalState([], "transactions");
 
   const context = {
-    count,
-    setCount,
     transactions,
-    setTransactions, 
+    setTransactions,
     addMoney: (amount) => {
-      let solde = transactions.reduce((a,b) => a + b.amount, 0)
-    }
-  }
-
+      let solde = transactions.reduce((a, b) => a + b.amount, 0);
+    },
+  };
 
   return (
     <Context.Provider value={context}>
@@ -63,7 +53,7 @@ function App() {
         <Navbar />
       </BrowserRouter>
     </Context.Provider>
-  )
-};
+  );
+}
 
 export default App;
