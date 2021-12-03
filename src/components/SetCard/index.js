@@ -3,8 +3,8 @@ import useLocalState from "../../utile/useLocaleState";
 import "./SetCard.css";
 
 function SetCard() {
-  const [formResult, setValue, deleteValue] = useLocalState({}, "form_result_card");
-  console.log(formResult)
+  const [formResult, deleteValue] = useLocalState({}, "form_result_card");
+  console.log(formResult);
   return (
     <div>
       <div className="carte">
@@ -13,7 +13,6 @@ function SetCard() {
         <div>Exp. {formResult.Expiration}</div>
         <div>CVV : {formResult.CVV}</div>
       </div>
-
 
       <button onClick={() => deleteValue()}>Supprimer carte</button>
     </div>

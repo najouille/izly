@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import useLocalState from "../../../utile/useLocaleState";
 
 function AddCard() {
@@ -26,7 +26,7 @@ function AddCard() {
       CVV: card_cvv.value,
       Titulaire: card_owner.value,
     });
-    window.location = "/MyCards"
+    window.location = "/MyCards";
   };
 
   return (
@@ -76,7 +76,6 @@ function AddCard() {
       </form>
     </div>
   );
-
 }
 
 export default AddCard;

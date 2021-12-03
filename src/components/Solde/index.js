@@ -57,8 +57,8 @@ function Solde() {
                 new Date(b.transactionDate) - new Date(a.transactionDate)
             )
             .slice(0, 5)
-            .map((elt) => (
-              <p className="date">
+            .map((elt, key) => (
+              <p key={key} className="date">
                 {elt.random +
                   elt.amount +
                   "€ " +

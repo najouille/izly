@@ -13,7 +13,7 @@ function Parameters() {
         <Link to="/MyCards">
           <div className="menu">
             <div className="logo_container">
-              <img src="./assets/wallet.svg" />
+              <img alt="" src="./assets/wallet.svg" />
             </div>
             <h3>Mes cartes bancaires</h3>
           </div>
@@ -21,21 +21,21 @@ function Parameters() {
 
         <div className="affluences">
           <div className="logo_container">
-            <img src="./assets/More_square.svg" />
+            <img alt="" src="./assets/More_square.svg" />
           </div>
           <h3>Mes coordonnées bancaires</h3>
         </div>
 
         <div className="fidelite">
           <div className="logo_container">
-            <img src="./assets/Lock.svg" />
+            <img alt="" src="./assets/Lock.svg" />
           </div>
           <h3>Sécurité</h3>
         </div>
 
         <div className="opposition">
           <div className="red_logo_container">
-            <img src="./assets/Danger_circle.svg" />
+            <img alt="" src="./assets/Danger_circle.svg" />
           </div>
           <h3 className="red_h3">Faire opposition à mon compte</h3>
         </div>

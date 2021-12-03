@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import Context from "../../utile/context";
-import dayjs from "dayjs";
 import "dayjs/locale/fr";
 
 //les fonctions randomItem et handleDposit sont les memes pour la page de virements et de paiements par qr code je les détaille ici*/
@@ -32,9 +31,9 @@ function Pay() {
             className="top-load-money"
             onClick={() => {
               let random = randomItem();
-              {
-                /*onclick on appel les deux fonctions, on affecte a handleDeposit "rechargement", un amount en fonction du montant sélectionné et une date de transaction pour pouvoir arranger l'historique des transactions par la suite */
-              }
+
+              /*onclick on appel les deux fonctions, on affecte a handleDeposit "rechargement", un amount en fonction du montant sélectionné et une date de transaction pour pouvoir arranger l'historique des transactions par la suite */
+
               handleDeposit({
                 random,
                 amount: 10,

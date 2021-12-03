@@ -1,8 +1,7 @@
-import React, { useEffect, useContext } from "react";
+import React, { useEffect, useContext, useCallback } from "react";
 // import { Link } from "react-router-dom";
 import Context from "../../utile/context";
 import "dayjs/locale/fr";
-import dayjs from "dayjs";
 import "./QrCode.css";
 import { useNavigate } from "react-router";
 
@@ -23,9 +22,13 @@ function QrCode() {
     return randomPlace[randomName];
   }
 
-  function handleDeposit(transaction) {
-    setTransactions([...transactions, transaction]);
-  }
+  const handleDeposit = useCallback(
+    (transaction) => {
+      setTransactions([...transactions, transaction]);
+    },
+    [setTransactions, transactions]
+  );
+
   useEffect(() => {
     const timer = setTimeout(() => {
       let random = randomItem();
@@ -37,7 +40,7 @@ function QrCode() {
       navigate("/validation");
     }, 3000);
     return () => clearTimeout(timer);
-  }, []);
+  }, [handleDeposit, navigate]);
   return (
     <div className="qrcode">
       <div className="top-qr">

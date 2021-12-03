@@ -28,7 +28,7 @@ function App() {
     setTransactions, //ajoute une transaction
     addMoney: (amount) => {
       // solde défini à 0 et recalculé à chaque transaction
-      let solde = transactions.reduce((a, b) => a + b.amount, 0);
+      transactions.reduce((a, b) => a + b.amount, 0);
     },
   };
 
