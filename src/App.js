@@ -36,7 +36,7 @@ function App() {
     <Context.Provider value={context}>
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/parameters" element={<Parameters />} />
           <Route path="/mycards" element={<MyCards />} />
           <Route path="/addcard" element={<AddCard />} />
