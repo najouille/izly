@@ -4,7 +4,6 @@ import useLocalState from "../../../utile/useLocaleState";
 import {Link} from "react-router-dom";
 
 function MyCards() {
-    const [formResult] = useLocalState({}, "form_result_card");
     return (
       <div>
         <h2>hello</h2>

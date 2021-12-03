@@ -1,14 +1,8 @@
 .plus {
-    background: #285FE9;
+    background: #FEFEFE;
      z-index: 1;
 }
 
-.bottom {
-    background-color: #fefefe;
-    z-index: 0;
-    padding: 70px 25px;
-    border-radius: 22px 22px 0px 0px;
-}
 
 h1{
     color: #FFFFFF;

@@ -6,8 +6,14 @@ export default function useLocalState(defaultValue, key) {
 
 		return stickyValue !== null ? JSON.parse(stickyValue) : defaultValue
 	})
+
+	const deleteValue = () => {
+		window.localStorage.removeItem(key)
+		setValue(defaultValue);
+	}
+	
 	React.useEffect(() => {
 		window.localStorage.setItem(key, JSON.stringify(value))
 	}, [key, value])
-	return [value, setValue ]
+	return [value, setValue, deleteValue ]
 }
