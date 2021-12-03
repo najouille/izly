@@ -5,7 +5,7 @@ function TransferTiers() {
   const navigate = useNavigate();
 
   const handleSubmit = (event) => {
-    event.preventDefault();
+    event.preventDefault(); //permet de rediriger vers la page "transfer" seulement lorsque l'utilisateur submit
     navigate("/Transfer");
   };
 

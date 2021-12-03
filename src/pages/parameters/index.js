@@ -1,48 +1,46 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import "./Parameters.css";
 
 function Parameters() {
   return (
-      <div className="plus">
-
-          <div className="top">
-            <h1>Paramètres</h1>
-          </div>
-
-          <div className="bottom">
-
-            <div className="menu">
-            <div className="logo_container">
-                <img src="./assets/menu.svg" />
-            </div>
-            <Link to="/MyCards">
-              <h3>Mes cartes bancaires</h3>
-              </Link> 
-            </div>
-
-            <div className="affluences">
-            <div className="logo_container">
-                <img src="./assets/affluences.svg" />
-            </div>
-              <h3>Mes coordonnées bancaires</h3>
-            </div> 
-
-            <div className="fidelite">
-            <div className="logo_container">
-                <img src="./assets/fidelite.svg" />
-            </div>
-              <h3>Sécurité</h3>
-            </div> 
-
-            <div className="apropos">
-            <div className="logo_container">
-                <img src="./assets/apropos.svg" />
-            </div>
-              <h3>Faire opposition à mon compte</h3>
-            </div>
-
-          </div>
+    <div className="plus">
+      <div className="top">
+        <h2>Paramètres</h2>
       </div>
+
+      <div className="bottom">
+        <Link to="/MyCards">
+          <div className="menu">
+            <div className="logo_container">
+              <img src="./assets/wallet.svg" />
+            </div>
+            <h3>Mes cartes bancaires</h3>
+          </div>
+        </Link>
+
+        <div className="affluences">
+          <div className="logo_container">
+            <img src="./assets/More_square.svg" />
+          </div>
+          <h3>Mes coordonnées bancaires</h3>
+        </div>
+
+        <div className="fidelite">
+          <div className="logo_container">
+            <img src="./assets/Lock.svg" />
+          </div>
+          <h3>Sécurité</h3>
+        </div>
+
+        <div className="opposition">
+          <div className="red_logo_container">
+            <img src="./assets/Danger_circle.svg" />
+          </div>
+          <h3 className="red_h3">Faire opposition à mon compte</h3>
+        </div>
+      </div>
+    </div>
   );
 }
 

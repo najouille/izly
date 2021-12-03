@@ -39,14 +39,14 @@ function QrCode() {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <div className="top-container">
-      {/* <Link to="/">
-        <input type="submit" value="Retour" />
-      </Link> */}
-      <div className="sold-container">
-        <h2>Payer</h2>
+    <div className="qrcode">
+      <div className="top-qr">
+        <h2 className="player-title">Payer</h2>
         <p>Présentez le QR code au lecteur du point d'encaissement</p>
-        <div className="qr-container">
+      </div>
+
+      <div className="bottom">
+        <div className="qr_container">
           <img alt="" src="./assets/qrcode.png" />
         </div>
       </div>

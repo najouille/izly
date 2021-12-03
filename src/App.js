@@ -23,9 +23,11 @@ function App() {
   const [transactions, setTransactions] = useLocalState([], "transactions");
 
   const context = {
-    transactions,
-    setTransactions,
+    //contexte qui gère les transaction sur l'app
+    transactions, //ensemble de transactions
+    setTransactions, //ajoute une transaction
     addMoney: (amount) => {
+      // solde défini à 0 et recalculé à chaque transaction
       let solde = transactions.reduce((a, b) => a + b.amount, 0);
     },
   };

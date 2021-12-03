@@ -1,81 +1,84 @@
 .plus {
-    background: #285FE9;
-     z-index: 1;
+  background: #285fe9;
+  position: fixed;
+  bottom: 82px;
+  width: 100vw;
+  box-sizing: border-box;
 }
 
 .bottom {
-    background-color: #fefefe;
-    z-index: 0;
-    padding: 70px 25px;
-    border-radius: 22px 22px 0px 0px;
+  background-color: #fefefe;
+  padding: 5rem 1.5rem;
+  border-radius: 22px 22px 0px 0px;
 }
 
-h1{
-    color: #FFFFFF;
-    width: 126px;
-    height: 75px;
-    left: 125px;
-    top: 68px;
-
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 75px;
-    margin-left: auto;
-    margin-right: auto;
+.top {
+  display: flex;
 }
 
-h3{
+h2 {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  margin: 5vh auto 7vh;
+}
+
+h3 {
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
-  
   color: #000000;
 }
 
 .logo_container {
-    background-color: #E8F0FD;
-    padding: 15px;
-    border-radius: 12px;
-    margin-right: 15px;
+  background-color: #e8f0fd;
+  padding: 15px;
+  border-radius: 12px;
+  margin-right: 15px;
 }
 
 .menu {
-    display: flex;
-    padding: 15px;
-    margin-top: 16px;
-    align-items: center;
-    border-radius: 12px;
-    background-color: #FEFEFF;
-    box-shadow: 0px 0px 21px 2px #00000014;
-  }
+  display: flex;
+  padding: 15px;
+  margin-top: 16px;
+  align-items: center;
+  border-radius: 12px;
+  background-color: #fefeff;
+  box-shadow: 0px 0px 21px 2px #00000014;
+}
 
 .affluences {
-    display: flex;
-    padding: 15px;
-    margin-top: 16px;
-    align-items: center;
-    border-radius: 12px;
-    background-color: #FEFEFF;
-    box-shadow: 0px 0px 21px 2px #00000014;
-  }
+  display: flex;
+  padding: 15px;
+  margin-top: 16px;
+  align-items: center;
+  border-radius: 12px;
+  background-color: #fefeff;
+  box-shadow: 0px 0px 21px 2px #00000014;
+}
 
 .fidelite {
-    display: flex;
-    padding: 15px;
-    margin-top: 16px;
-    align-items: center;
-    border-radius: 12px;
-    background-color: #FEFEFF;
-    box-shadow: 0px 0px 21px 2px #00000014;
-  }
+  display: flex;
+  padding: 15px;
+  margin-top: 16px;
+  align-items: center;
+  border-radius: 12px;
+  background-color: #fefeff;
+  box-shadow: 0px 0px 21px 2px #00000014;
+}
 
 .apropos {
-    display: flex;
-    padding: 15px;
-    margin-top: 16px;
-    align-items: center;
-    border-radius: 12px;
-    background-color: #FEFEFF;
-    box-shadow: 0px 0px 21px 2px #00000014;
-  }
+  display: flex;
+  padding: 15px;
+  margin-top: 16px;
+  align-items: center;
+  border-radius: 12px;
+  background-color: #fefeff;
+  box-shadow: 0px 0px 21px 2px #00000014;
+}
 
+.allh2 {
+  text-align: center;
+  font-size: 2.5rem;
+}

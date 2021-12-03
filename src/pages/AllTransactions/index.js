@@ -11,7 +11,7 @@ function AllTransactions() {
       <Link to="/">
         <input type="submit" value="Retour" />
       </Link>
-      <h2>Mes transactions</h2>
+      <h2 className="allh2">Mes transactions</h2>
       {transactions
         .sort(
           (a, b) => new Date(b.transactionDate) - new Date(a.transactionDate)

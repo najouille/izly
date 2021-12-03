@@ -5,7 +5,7 @@ function Plus() {
   return (
     <div className="plus">
       <div className="top">
-        <h1>Plus</h1>
+        <h2>Plus</h2>
       </div>
 
       <div className="bottom">

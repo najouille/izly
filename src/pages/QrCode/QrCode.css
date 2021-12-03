@@ -1,3 +1,46 @@
+.qrcode {
+  background: #285fe9;
+  position: fixed;
+  bottom: 82px;
+  /* height: 90.6vh; */
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.bottom {
+  background-color: #fefefe;
+  padding: 5rem 1.5rem;
+  border-radius: 22px 22px 0px 0px;
+}
+
+.player-title {
+  margin: 0;
+}
+
+.top {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr_container {
+  display: flex;
+}
+
 img {
-  max-height: 23rem;
+  max-height: 21rem;
+  margin: auto;
+}
+
+p {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.top-qr {
+  margin-bottom: 3rem;
 }

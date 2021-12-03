@@ -1,12 +1,10 @@
-.profil {
-  background: #285fe9;
-  position: fixed;
-  bottom: 82px;
-  width: 100vw;
-  box-sizing: border-box;
+a {
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
 }
 
-.deconnexion {
+.opposition {
   display: flex;
   padding: 15px;
   margin-top: 16px;
