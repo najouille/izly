@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "dayjs/locale/fr";
 import "./navbar.css";
 
+
 const Navbar = () => {
   return (
     <div className="logo">
