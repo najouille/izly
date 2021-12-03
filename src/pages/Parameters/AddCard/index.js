@@ -21,10 +21,10 @@ function AddCard() {
       event.target.elements;
 
     setFormResult({
-      card_number: card_number.value,
-      card_expire: card_expire.value,
-      card_cvv: card_cvv.value,
-      card_owner: card_owner.value,
+      Numéro: card_number.value,
+      Expiration: card_expire.value,
+      CVV: card_cvv.value,
+      Titulaire: card_owner.value,
     });
     window.location = "/MyCards"
   };
